@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "mine";
+  src: url("fonts/Minecraftia-Regular.ttf");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  background-image: url(jpg/minecraft.jpg);
+  background-size: 100%;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(162, 27, 27);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+  animation-name: box;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-delay: 0.9;
+  animation-direction: alternate;
+  animation-iteration-count: 0;
+  z-index: 2;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  border-width: 15px;
+  padding: 30px 10px 0 10px;
+  background-color: rgb(173, 27, 27);
+  font-size: 50px;
+  font-family: mine;
+  z-index: 1;
+}
+
+.timer:focus {
+  outline: none;
+}
+
+.text {
+  font-size: 100px;
+  font-family: mine;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.strip {
+  width: 500px;
+  height: 110px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+}
+
+.line {
+  width: 40px;
+  height: 500px;
+  background-color: rgb(105, 2, 23);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.n1 {
+  margin-right: 400px;
+}
+.n2 {
+  margin-left: 200px;
+}
+.n3 {
+  margin-right: 200px;
+}
+.n4 {
+  margin-left: 400px;
+}
+
+.n7 {
+  width: 20px;
+  height: 500px;
+  background-color: rgb(118, 19, 19);
+  margin-left: 150px;
+}
+.n6 {
+  width: 20px;
+  height: 500px;
+  background-color: rgb(52, 18, 18);
+  margin-right: 250px;
+}
+.n7 {
+  width: 20px;
+  height: 500px;
+  background-color: rgb(138, 26, 26);
+  margin-left: 50px;
+}
+
+@keyframes box {
+  0% {
+    bottom: 0px;
+    background-color: white;
+  }
+
+  25% {
+    background-color: rgb(162, 27, 27);
+  }
+
+  50% {
+    background-color: white;
+  }
+
+  100% {
+    bottom: 100px;
+  }
+}
+
